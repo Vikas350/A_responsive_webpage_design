@@ -1,0 +1,77 @@
+/* css required for responsiveness for all devices  */
+
+/* navigation bar  */
+#navbar{
+    flex-direction: column;
+    padding-bottom: 8px;
+}
+#navbar ul li a{
+    /* padding:1px 5px;  */
+    font-size: 0.6rem;
+    padding:0px 8px;
+}
+
+/* css home section */
+#home{
+    height:460px;
+    padding: 2px 90px;
+    
+}
+#home ::before{
+    height:300px;
+}
+#home p{
+    font-size: 9px;
+    padding:0px 0px;
+}
+#home .btn{
+    font-size: 12px;
+    
+}
+
+/* services section  */
+#services{
+    flex-direction: column;
+}
+
+#services .box img{
+    height:100px;
+}
+
+#services .box p{
+    font-size: 13px;
+    padding:1px 1px;
+}
+
+/* clients section  */
+#clients{
+    flex-wrap: wrap;
+    
+}
+#clients img{
+    width:70px;
+    padding:20px;
+    height:90px;
+    
+}
+.client-item{
+    padding:0px 5px;
+    flex-wrap: wrap;
+
+}
+
+/* contact form section  */
+#contact-box form{
+    width:60%;
+}
+
+/* utility classes section  */
+.h-primary{
+    font-size: 30px;
+    padding:0px 2px;
+}
+
+.h-secondary{
+    font-size: 22px;
+    padding:0px 2px;
+}

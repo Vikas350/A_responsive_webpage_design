@@ -1,0 +1,257 @@
+/* universal selector */
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Noto Serif', serif;
+
+}
+
+/* css in logo */
+#logo{
+    margin:1px 10px;
+    padding:5px;
+}
+.mylogo{
+    height:60px;
+    margin:2px 2px;
+    padding:5px;
+    border-radius: 60px;
+
+}
+
+/* navigation bar  */
+#navbar{
+    display:flex;
+    align-items: center;
+    /* position relative to its original position  */
+    position:relative;      
+    top:0px;
+    
+}
+/* important code for setting a background image  */
+#navbar::before{
+    content:"";
+    background-color:rgb(12, 12, 12);
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.9;   
+    /* more opacity --->> more darkness   */
+}
+
+/* list styling */
+#navbar ul{
+    display:flex;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;  
+
+}
+#navbar ul li a{
+    /* color: black; */
+    color:rgb(55, 70, 102);
+    font-weight: bold;
+    padding:4px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    
+}
+#navbar ul li a:hover{
+    background-color:rgb(53, 177, 184);
+    color:white;
+
+}
+
+/* home section css */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:5px 200px;
+    height:480px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    background-image:url(Pics/bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:absolute;
+    height:600px;
+    top:0px;
+    left:0px;
+    /* height:80%; */
+    width:100%;
+    z-index: -1;
+    opacity:0.9;
+
+}
+#home h1{
+   color:rgb(55, 115, 226);
+   text-align: center;
+   font-family: 'Noto Serif', serif;
+
+}
+
+#home p{
+   color:rgb(36,33,33);
+   text-align: center;
+   font-size: 1rem;
+   font-family: 'Noto Serif', serif;
+}
+
+/* button styling */
+.btn{
+    margin: 20px;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-family: 'Noto Serif', serif;
+    background-color: rgb(132, 185, 187);
+    border:2px solid rgb(77, 180, 185);
+    border-radius: 20px;
+    color:rgb(44, 39, 39);
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+/* services section styling  */
+#services{
+    margin:20px;
+    display:flex;
+}
+#services .box{
+    border:2px solid rgb(77,180,185);
+    margin:3px 10px;
+    padding:20px;
+    border-radius: 25px;
+    background-color: rgb(208,208,208);
+
+}
+#services .box img{
+    height:150px;
+    display: block;
+    margin:auto;
+    border-radius: 25px;
+
+}
+
+/* clients sections */
+#client-section{
+    /* height:350px;   */
+    position:relative;
+}
+#client-section::before{
+    content:"";
+    background-image: url(Pics/bg2.jpg);
+    background-position:center;
+    background-size: cover;
+    /* height:350px; */
+    height:100%;  
+    width:100%;
+    position:absolute;
+    z-index: -1;
+    opacity:0.3;
+}
+#clients{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.client-item{
+    padding:30px;
+}
+#clients img{
+    height:130px;
+}
+
+/* form section designing */
+#contact{
+    position:relative;
+
+}
+
+#contact::before{
+    content:"";
+    background-image:url(Pics/bg3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.5;
+}
+
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:34px;
+}
+#contact-box form{
+    width:35%;
+    font-family: 'Noto Serif', serif;
+
+}
+
+#contact-box label{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Noto Serif', serif;
+    
+
+}
+
+#contact-box input,
+#contact-box textarea{
+
+    width:100%;
+    padding:0.5rem;
+    border-radius: 10px;
+    border:2px solid rgb(38, 38, 41); 
+    margin-bottom: 15px;
+}
+#contact-box .btn{
+    display:block;
+    margin:auto;
+    margin-top: 20px;
+}
+
+/* footer designing */
+footer{
+    background-color: rgb(15, 15, 15);
+    color:white;
+    padding:5px 20px;
+
+}
+
+/* some utility class */
+.h-primary{
+    font-size: 3rem;  /*relative to root element like html*/
+    padding:35px;
+    font-family: 'Noto Serif', serif;
+    color:rgb(55, 115, 226);
+
+
+    
+}
+.h-secondary{
+    font-size: 2rem;  /*relative to root element like html*/
+    padding:15px;
+    font-family: 'Noto Serif', serif;
+
+}
+.center{
+    text-align: center;
+}
